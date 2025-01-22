@@ -11,7 +11,7 @@ const LoginScreen = ({ navigation }: any) => {
 
     if (email.trim() === hardcodedEmail && password === hardcodedPassword) {
       Alert.alert('Success!', 'Welcome, Student!', [
-        { text: 'Proceed', onPress: () => navigation.navigate('StudentScreen') },
+        { text: 'Proceed', onPress: () => navigation.navigate('ProfessorScreen') },
       ]);
     } else {
       Alert.alert('Login Failed', 'Invalid email or password. Please try again.');
